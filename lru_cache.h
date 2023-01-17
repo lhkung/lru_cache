@@ -4,8 +4,6 @@
 #include <list>
 #include <unordered_map>
 
-namespace PennCloud::Utils {
-
 template <typename K, typename V>
 class LRUCache {
   public:
@@ -52,7 +50,5 @@ class LRUCache {
     std::unordered_map<K, typename std::list<K>::iterator> map_;
     typename std::unordered_map<K, V> kv_;
 };
-
-} // namespace PennCloud::Utils
 
 #endif
